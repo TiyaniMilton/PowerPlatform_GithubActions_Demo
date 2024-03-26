@@ -19,7 +19,7 @@ jobs:
       with:
         solution-folder: 'src/solutions/Unmanaged/DevOpsDemo'
         solution-file: 'out/solutions/Managed/DevOpsDemo.zip'
-        solution-type: Managed
+        solution-type: Unmanaged
 
     - name: Upload artifact store the release solution
       uses: actions/upload-artifact@v2
