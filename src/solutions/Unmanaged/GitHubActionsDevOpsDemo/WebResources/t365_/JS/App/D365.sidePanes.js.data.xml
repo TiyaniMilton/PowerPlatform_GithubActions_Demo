@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{8b21df2f-e3db-ee11-904d-6045bdd4346a}</WebResourceId>
+  <Name>t365_/JS/App/D365.sidePanes.js</Name>
+  <DisplayName>/JS/App/D365.sidePanes.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/t365_JSAppD365sidePanesjs8B21DF2F-E3DB-EE11-904D-6045BDD4346A</FileName>
+</WebResource>
