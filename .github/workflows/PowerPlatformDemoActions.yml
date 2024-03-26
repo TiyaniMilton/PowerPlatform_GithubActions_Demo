@@ -2,7 +2,6 @@ on: push
 
 jobs:
   build:
-
     runs-on: GitHub_PowerPlatform_Runner
 
     steps:
