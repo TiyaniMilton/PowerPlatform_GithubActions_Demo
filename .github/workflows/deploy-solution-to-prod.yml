@@ -6,7 +6,7 @@ on:
     types: [created]
 
 jobs:
-  deploy-managed-solution:
+  deploy-solution:
     runs-on: windows-latest
     
     steps:
