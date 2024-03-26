@@ -32,20 +32,20 @@ jobs:
           client-secret: ${{ secrets.CLIENT_SECRET }}
           tenant-id: ${{ secrets.TENANT_ID }}
           solution-name: DevOpsDemo
-          solution-output-file: 'out/Unmanaged/DevOpsDemo.zip'
+          solution-output-file: 'out/Unmanaged/GitHubActionsDevOpsDemo.zip'
 
       - name: Unpack Solution
         uses: microsoft/powerplatform-actions/unpack-solution@v1
         with:
-          solution-file: 'out/Unmanaged/DevOpsDemo.zip'
-          solution-folder: 'out/solutions/Unmanaged/DevOpsDemo'
+          solution-file: 'out/Unmanaged/GitHubActionsDevOpsDemo.zip'
+          solution-folder: 'out/solutions/Unmanaged/GitHubActionsDevOpsDemo'
           solution-type: 'Unmanaged'
           overwrite-files: true
 
       - name: Prepare solution changes for check-in into source control
         uses: microsoft/powerplatform-actions/branch-solution@v1
         with:
-          solution-folder: 'out/solutions/Unmanaged/DevOpsDemo'
-          solution-target-folder: 'src/solutions/Unmanaged/DevOpsDemo'
+          solution-folder: 'out/solutions/Unmanaged/GitHubActionsDevOpsDemo'
+          solution-target-folder: 'src/solutions/Unmanaged/GitHubActionsDevOpsDemo'
           repo-token: ${{ secrets.POWERPLATFORM_TOKEN }}
           allow-empty-commit: true
