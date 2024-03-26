@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e4c359d5-e2db-ee11-904d-6045bdd4346a}</WebResourceId>
+  <Name>t365_/JS/Entities/Contact/Form/Contact.js</Name>
+  <DisplayName>/JS/Entities/Contact/Form/Contact.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/t365_JSEntitiesContactFormContactjsE4C359D5-E2DB-EE11-904D-6045BDD4346A</FileName>
+</WebResource>
