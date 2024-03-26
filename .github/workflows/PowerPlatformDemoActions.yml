@@ -3,8 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  export-from-qa:
-  
+  export-from-qa:  
     runs-on: windows-latest
 
     steps:
@@ -13,11 +12,11 @@ jobs:
         lfs: true
         
      - name: who-am-i action
-      uses: microsoft/powerplatform-actions/who-am-i@v0
-      with:
-        environment-url: 'https://t365-qa.crm.dynamics.com'
-        user-name: 'sa@rogerthatdev.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+       uses: microsoft/powerplatform-actions/who-am-i@v0
+       with:
+         environment-url: 'https://t365-qa.crm.dynamics.com'
+         user-name: 'sa@rogerthatdev.onmicrosoft.com'
+         password-secret: ${{ secrets.password }}
         
     - name: Install Power Platform Tools
       uses: microsoft/powerplatform-actions/actions-install@v1
