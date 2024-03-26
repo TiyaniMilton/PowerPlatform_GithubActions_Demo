@@ -2,7 +2,7 @@ on: push
 
 jobs:
   build:
-    runs-on: GitHub_PowerPlatform_Runner
+    runs-on: self-hosted
 
     steps:
     - name: Install Power Platform Tools
