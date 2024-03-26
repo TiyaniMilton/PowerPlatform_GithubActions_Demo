@@ -1,11 +1,24 @@
-on: push
+name: export-and-commit-push-solution-to-branch
+on:
+  workflow_dispatch:
 
 jobs:
-  build:
+  export-from-qa:
   
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     steps:
+    - uses: actions/checkout@v2
+      with:
+        lfs: true
+        
+     - name: who-am-i action
+      uses: microsoft/powerplatform-actions/who-am-i@v0
+      with:
+        environment-url: 'https://t365-qa.crm.dynamics.com'
+        user-name: 'sa@rogerthatdev.onmicrosoft.com'
+        password-secret: ${{ secrets.password }}
+        
     - name: Install Power Platform Tools
       uses: microsoft/powerplatform-actions/actions-install@v1
 
