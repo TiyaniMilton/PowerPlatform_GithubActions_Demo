@@ -47,4 +47,4 @@ jobs:
           solution-folder: 'out/solutions/Unmanaged/DevOpsDemo'
           solution-target-folder: 'src/solutions/Unmanaged/DevOpsDemo'
           token: ${{ secrets.POWERPLATFORM_TOKEN }}
-	        allow-empty-commit: true
+          allow-empty-commit: true
