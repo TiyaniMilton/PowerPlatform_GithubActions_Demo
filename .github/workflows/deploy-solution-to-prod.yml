@@ -17,15 +17,15 @@ jobs:
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
-        solution-folder: 'src/solutions/Unmanaged/DevOpsDemo'
-        solution-file: 'out/solutions/Managed/DevOpsDemo.zip'
+        solution-folder: 'src/solutions/Unmanaged/GitHubActionsDevOpsDemo'
+        solution-file: 'out/solutions/Managed/GitHubActionsDevOpsDemo.zip'
         solution-type: Unmanaged
 
     - name: Upload artifact store the release solution
       uses: actions/upload-artifact@v2
       with:
         name: managedSolutions
-        path: 'out/solutions/Managed/DevOpsDemo.zip'
+        path: 'out/solutions/Managed/GitHubActionsDevOpsDemo.zip'
         
     - name: Fetch the ready to ship solution from GH artifact store
       uses: actions/download-artifact@v2
@@ -42,6 +42,6 @@ jobs:
         app-id: ${{ secrets.CLIENT_ID }}
         client-secret: ${{ secrets.CLIENT_SECRET }}
         tenant-id: ${{ secrets.TENANT_ID }}
-        solution-file: 'out/solutions/Managed/DevOpsDemo.zip'
+        solution-file: 'out/solutions/Managed/GitHubActionsDevOpsDemo.zip'
         force-overwrite: true
         publish-changes: true
