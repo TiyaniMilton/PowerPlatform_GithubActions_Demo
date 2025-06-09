@@ -2,7 +2,10 @@ name: export-add-commit-and-push-solution-to-branch
 
 on:
    workflow_dispatch:
-
+   
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: windows-latest
@@ -47,5 +50,5 @@ jobs:
         with:
           solution-folder: 'out/solutions/Unmanaged/GitHubActionsDevOpsDemo'
           solution-target-folder: 'src/solutions/Unmanaged/GitHubActionsDevOpsDemo'
-          repo-token: ${{ secrets.POWERPLATFORM_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           allow-empty-commit: true
