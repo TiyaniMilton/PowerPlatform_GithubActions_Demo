@@ -22,7 +22,7 @@ jobs:
         solution-type: Unmanaged
 
     - name: Upload artifact store the release solution
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: managedSolutions
         path: 'out/solutions/Managed/GitHubActionsDevOpsDemo.zip'
